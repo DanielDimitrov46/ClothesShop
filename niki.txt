@@ -1,0 +1,12 @@
+CREATE TABLE `18334`.`stocks` (
+  `idstocks` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `type` VARCHAR(45) NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `price` DECIMAL(2) NOT NULL,
+  `brand` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idstocks`));
+
+
+INSERT INTO `18334`.`stocks` (`type`, `name`, `price`, `brand`) VALUES ('shoes', 'Snickers', '34.00', 'nike');
+INSERT INTO `18334`.`stocks` (`type`, `name`, `price`, `brand`) VALUES ('scarf', 'Microfiber Wool Scarf', '64.00', 'calvin klein');
+INSERT INTO `18334`.`stocks` (`type`, `name`, `price`, `brand`) VALUES ('coat', '2 Layer Windbreaker', '44.00', 'Jack Wolfskin');
