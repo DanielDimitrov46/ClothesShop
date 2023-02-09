@@ -25,29 +25,17 @@
                         <li class="heart-icon">
                             <a href="#">
                                 <i class="icon_heart_alt"></i>
-                                <span>1</span>
                             </a>
                         </li>
                         <li class="cart-icon">
                             <a href="shopping-cart.php">
                                 <i class="icon_bag_alt"></i>
-                                <span>3</span>
                             </a>
                             <div class="cart-hover">
                                 <div class="select-items">
                                     <table>
                                         <tbody>
                                         <tr>
-                                            <td class="si-pic"><img src="img/select-product-1.jpg" alt=""></td>
-                                            <td class="si-text">
-                                                <div class="product-selected">
-                                                    <p>$60.00 x 1</p>
-                                                    <h6>Kabino Bedside Table</h6>
-                                                </div>
-                                            </td>
-                                            <td class="si-close">
-                                                <i class="ti-close"></i>
-                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="si-pic"><img src="img/select-product-2.jpg" alt=""></td>

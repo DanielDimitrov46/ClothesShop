@@ -132,7 +132,7 @@ FROM inventory i' );
                                             <h5><?= $row["name"] ?></h5>
                                         </a>
                                         <div class="product-price">
-                                            <?= $row["price"] ?>
+                                            <?= $row["price"]?>$
                                         </div>
                                     </div>
                                 </div>
