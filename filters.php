@@ -57,6 +57,11 @@
     <div class="filter-widget">
         <h4 class="fw-title">Size</h4>
         <div class="fw-size-choose">
+            <form name="sizes">
+            <div class="sc-item">
+                <input type="radio" id="xs-size">
+                <label for="xs-size">xs</label>
+            </div>
             <div class="sc-item">
                 <input type="radio" id="s-size">
                 <label for="s-size">s</label>
@@ -71,8 +76,13 @@
             </div>
             <div class="sc-item">
                 <input type="radio" id="xs-size">
-                <label for="xs-size">xs</label>
+                <label for="xs-size">xl</label>
             </div>
+            <div class="sc-item">
+                <input type="radio" id="xs-size">
+                <label for="xs-size">xxl</label>
+            </div>
+            </form>
         </div>
     </div>
 </div>

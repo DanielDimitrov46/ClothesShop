@@ -23,6 +23,7 @@
 <?php
 
 $search = @$_GET['search'];
+$sizes = @$_GET['sizes'];
 
 
 $connection = new PDO('mysql:host=localhost;dbname=18323',"root","");
@@ -49,6 +50,22 @@ WHERE i.name LIKE ?
     $query->execute([ "%".$search."%","%".$search."%","%".$search."%","%".$search."%"]);
     $rows = $query->fetchAll();
 }
+
+else if ($sizes) {
+    $query = $connection->prepare('SELECT
+i.idinventory,
+i.name, i.price, i.color,
+i.sizes_idsizes, i.categories
+FROM inventory i
+WHERE i.name LIKE ?
+   OR i.color LIKE ?
+   OR i.sizes_idsizes LIKE ?
+   OR i.categories LIKE ?');
+
+    $query->execute([ "%".$search."%","%".$search."%","%".$search."%","%".$search."%"]);
+    $rows = $query->fetchAll();
+}
+
 
 
 else{
@@ -129,10 +146,10 @@ FROM inventory i' );
                                     </div>
                                     <div class="pi-text">
                                         <a href="#">
-                                            <h5><?= $row["name"] ?></h5>
+                                            <h5><?= $row["name"] ?> <?= $row["sizes_idsizes"]?></h5>
                                         </a>
                                         <div class="product-price">
-                                            <?= $row["price"]?>$
+                                            $<?= $row["price"]?>
                                         </div>
                                     </div>
                                 </div>
