@@ -1,0 +1,9 @@
+ALTER TABLE `18323`.`inventory` 
+DROP FOREIGN KEY `fk_inventory_sizes`;
+ALTER TABLE `18323`.`inventory` 
+DROP COLUMN `sizes_idsizes`,
+ADD COLUMN `sizes` VARCHAR(45) NOT NULL AFTER `categories`,
+DROP INDEX `fk_inventory_sizes` ;
+
+UPDATE `18323`.`inventory` SET `sizes` = 'm' WHERE (`idinventory` = '1');
+UPDATE `18323`.`inventory` SET `sizes` = 'xs' WHERE (`idinventory` = '2');
