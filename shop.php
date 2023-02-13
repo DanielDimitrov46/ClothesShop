@@ -52,7 +52,6 @@ WHERE i.name LIKE ?
 
 
 
-
 else{
     $rows = $connection -> query('SELECT 
 i.idinventory,

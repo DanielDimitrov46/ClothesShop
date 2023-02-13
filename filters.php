@@ -56,33 +56,25 @@
     </div>
     <div class="filter-widget">
         <h4 class="fw-title">Size</h4>
-<!--        <div class="fw-size-choose">-->
-<!--            <div class="select-button">-->
-<!--                <button class = "size-btn">XS</button>-->
-<!--            </div>-->
-<!--            <div class="sc-item" >-->
-<!--                <button class = "size-btn">S</button>-->
-<!--            </div>-->
-<!--            <div class="sc-item">-->
-<!--                <button class = "size-btn">M</button>-->
-<!--            </div>-->
-<!--            <div class="sc-item">-->
-<!--                <button class = "size-btn">L</button>-->
-<!--            </div>-->
-<!--            <div class="sc-item">-->
-<!--                <button class = "size-btn">XL</button>-->
-<!--            </div>-->
-<!--            <div class="sc-item">-->
-<!--                <button onclick="" class = "size-btn">XXL</button>-->
-<!--            </div>-->
-<!--        </div>-->
-        <ul class = "filter-sizes">
-            <li><button class = "size-btn">XS</button></li>
-            <li><button class = "size-btn">S</button></li>
-            <li><button class = "size-btn">M</button></li>
-            <li><button class = "size-btn">L</button></li>
-            <li><button class = "size-btn">XL</button></li>
-            <li><button class = "size-btn">XXL</button></li>
-        </ul>
+        <div class="fw-size-choose">
+            <div class="select-button">
+                <button  onclick="window.location.href='/18323/shop.php?search=xs'">XS</button>
+            </div>
+            <div class="sc-item" >
+                <button onclick="window.location.href='/18323/shop.php?search=s'">S</button>
+            </div>
+            <div class="sc-item">
+                <button onclick="window.location.href='/18323/shop.php?search=m'">M</button>
+            </div>
+            <div class="sc-item">
+                <button onclick="window.location.href='/18323/shop.php?search=l'">L</button>
+            </div>
+            <div class="sc-item">
+                <button onclick="window.location.href='/18323/shop.php?search=xl'">XL</button>
+            </div>
+            <div class="sc-item">
+                <button onclick="window.location.href='/18323/shop.php?search=xxl'">XXL</button>
+            </div>
+        </div>
     </div>
 </div>
