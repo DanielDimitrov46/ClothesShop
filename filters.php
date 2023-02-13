@@ -56,25 +56,33 @@
     </div>
     <div class="filter-widget">
         <h4 class="fw-title">Size</h4>
-        <div class="fw-size-choose">
-            <div class="select-button">
-                <button>XS</button>
-            </div>
-            <div class="sc-item" >
-                <button>S</button>
-            </div>
-            <div class="sc-item">
-                <button>M</button>
-            </div>
-            <div class="sc-item">
-                <button>L</button>
-            </div>
-            <div class="sc-item">
-                <button>XL</button>
-            </div>
-            <div class="sc-item">
-                <button onclick="">XXL</button>
-            </div>
-        </div>
+<!--        <div class="fw-size-choose">-->
+<!--            <div class="select-button">-->
+<!--                <button class = "size-btn">XS</button>-->
+<!--            </div>-->
+<!--            <div class="sc-item" >-->
+<!--                <button class = "size-btn">S</button>-->
+<!--            </div>-->
+<!--            <div class="sc-item">-->
+<!--                <button class = "size-btn">M</button>-->
+<!--            </div>-->
+<!--            <div class="sc-item">-->
+<!--                <button class = "size-btn">L</button>-->
+<!--            </div>-->
+<!--            <div class="sc-item">-->
+<!--                <button class = "size-btn">XL</button>-->
+<!--            </div>-->
+<!--            <div class="sc-item">-->
+<!--                <button onclick="" class = "size-btn">XXL</button>-->
+<!--            </div>-->
+<!--        </div>-->
+        <ul class = "filter-sizes">
+            <li><button class = "size-btn">XS</button></li>
+            <li><button class = "size-btn">S</button></li>
+            <li><button class = "size-btn">M</button></li>
+            <li><button class = "size-btn">L</button></li>
+            <li><button class = "size-btn">XL</button></li>
+            <li><button class = "size-btn">XXL</button></li>
+        </ul>
     </div>
 </div>

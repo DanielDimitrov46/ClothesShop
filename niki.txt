@@ -7,3 +7,17 @@ DROP INDEX `fk_inventory_sizes` ;
 
 UPDATE `18323`.`inventory` SET `sizes` = 'm' WHERE (`idinventory` = '1');
 UPDATE `18323`.`inventory` SET `sizes` = 'xs' WHERE (`idinventory` = '2');
+
+new table for information from checkout
+CREATE TABLE `18323`.`info` (
+  `idinfo` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `family` VARCHAR(45) NOT NULL,
+  `company_name` VARCHAR(45) NULL,
+  `country` VARCHAR(45) NOT NULL,
+  `address` VARCHAR(100) NOT NULL,
+  `postcode` VARCHAR(45) NULL,
+  `city` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(70) NOT NULL,
+  `phone` VARCHAR(12) NOT NULL,
+  PRIMARY KEY (`idinfo`));
