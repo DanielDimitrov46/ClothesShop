@@ -58,22 +58,22 @@
         <h4 class="fw-title">Size</h4>
         <div class="fw-size-choose">
             <div class="select-button">
-                <button>XS</button>
+                <button  onclick="window.location.href='/18323/shop.php?search=xs'">XS</button>
             </div>
             <div class="sc-item" >
-                <button>S</button>
+                <button onclick="window.location.href='/18323/shop.php?search=s'">S</button>
             </div>
             <div class="sc-item">
-                <button>M</button>
+                <button onclick="window.location.href='/18323/shop.php?search=m'">M</button>
             </div>
             <div class="sc-item">
-                <button>L</button>
+                <button onclick="window.location.href='/18323/shop.php?search=l'">L</button>
             </div>
             <div class="sc-item">
-                <button>XL</button>
+                <button onclick="window.location.href='/18323/shop.php?search=xl'">XL</button>
             </div>
             <div class="sc-item">
-                <button onclick="">XXL</button>
+                <button onclick="window.location.href='/18323/shop.php?search=xxl'">XXL</button>
             </div>
         </div>
     </div>
