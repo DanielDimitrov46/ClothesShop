@@ -59,7 +59,7 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="cart-buttons">
-                                <a href="#" class="primary-btn continue-shop">Continue shopping</a>
+                                <a href="shop.php" class="primary-btn continue-shop">Continue shopping</a>
                                 <a href="localhost/Niki-nenchev-diploma/shop.php" class="primary-btn up-cart">Update cart</a>
                             </div>
                             <div class="discount-coupon">
@@ -76,7 +76,7 @@
                                     <li class="subtotal">Subtotal <span>$0.00</span></li>
                                     <li class="cart-total">Total <span>$0.00</span></li>
                                 </ul>
-                                <a href="#" class="proceed-btn">PROCEED TO CHECK OUT</a>
+                                <a href="check-out.php" class="proceed-btn">PROCEED TO CHECK OUT</a>
                             </div>
                         </div>
                     </div>

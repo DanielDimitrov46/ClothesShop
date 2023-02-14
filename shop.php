@@ -120,7 +120,7 @@ FROM inventory i' );
                             <div class="col-lg-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="pi-pic">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-<?=$row["idinventory"]?>.jpg" alt="">
                                         <div class="icon">
                                             <i class="icon_heart_alt"></i>
                                         </div>
