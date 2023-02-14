@@ -54,27 +54,33 @@
             </div>
         </div>
     </div>
+    <form>
     <div class="filter-widget">
         <h4 class="fw-title">Size</h4>
-        <div class="fw-size-choose">
-            <div class="select-button">
-                <button  onclick="window.location.href='/18323/shop.php?search=xs'">XS</button>
-            </div>
-            <div class="sc-item" >
-                <button onclick="window.location.href='/18323/shop.php?search=s'">S</button>
-            </div>
-            <div class="sc-item">
-                <button onclick="window.location.href='/18323/shop.php?search=m'">M</button>
-            </div>
-            <div class="sc-item">
-                <button onclick="window.location.href='/18323/shop.php?search=l'">L</button>
-            </div>
-            <div class="sc-item">
-                <button onclick="window.location.href='/18323/shop.php?search=xl'">XL</button>
-            </div>
-            <div class="sc-item">
-                <button onclick="window.location.href='/18323/shop.php?search=xxl'">XXL</button>
+        <div class="filter-widget">
+            <div class="fw-size-choose">
+                <div class="sc-item">
+                    <input type="radio" id="xs-size">
+                    <label for="xs-size">xs</label>
+                </div>
+                <div class="sc-item">
+                    <input type="radio" id="s-size">
+                    <label for="s-size">s</label>
+                </div>
+                <div class="sc-item">
+                    <input type="radio" id="m-size">
+                    <label for="m-size">m</label>
+                </div>
+                <div class="sc-item">
+                    <input type="radio" id="l-size">
+                    <label for="l-size">l</label>
+                </div>
+                <div class="sc-item">
+                    <input type="radio" id="xl-size">
+                    <label for="xl-size">xl</label>
+                </div>
             </div>
         </div>
     </div>
+    </form>
 </div>

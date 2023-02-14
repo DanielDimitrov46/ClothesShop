@@ -23,10 +23,9 @@
 <?php
 
 $search = @$_GET['search'];
-
+$sizes = @$_GET['sizes'];
 
 $connection = new PDO('mysql:host=localhost;dbname=18323',"root","");
-
 
 $rows = $connection -> query('SELECT 
 i.idinventory,
@@ -35,29 +34,30 @@ i.sizes, i.categories
 FROM inventory as i ;'
 );
 
-if ($search) {
-    $query = $connection->prepare('SELECT
-i.idinventory,
-i.name, i.price, i.color,
-i.sizes, i.categories 
-FROM inventory as i ;
-WHERE i.name LIKE ?
-   OR i.color LIKE ?
-   OR i.sizes LIKE ?
-   OR i.categories LIKE ?');
 
-    $query->execute([ "%".$search."%","%".$search."%","%".$search."%","%".$search."%"]);
-    $rows = $query->fetchAll();
-}
+if ($search) {
+        $query = $connection->prepare('SELECT *
+FROM inventory i
+WHERE i.name LIKE ?
+OR i.color LIKE ?');
+        $query->execute([ "%".$search."%","%".$search."%"]);
+        $rows = $query->fetchAll();
+
+
+//        echo "<pre>";
+//        print_r( $rows );
+
+
+    }
+
 
 
 
 else{
     $rows = $connection -> query('SELECT 
 i.idinventory,
-i.name, i.price, i.color,
-i.sizes, i.categories 
-FROM inventory as i ;' );
+i.name, i.price, i.color, i.categories, i.sizes
+FROM inventory i' );
 }
 ?>
 
