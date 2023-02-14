@@ -1,15 +1,15 @@
 <?php
-$name = $_POST["name"];
+$name = $_POST["fir"];
 $last_name = $_POST["last"];
-$company_name = $_POST["company"];
-$country = $_POST["country"];
-$address = $_POST["address"];
+$company_name = $_POST["cun-name"];
+$country = $_POST["con"];
+$address = $_POST["street"];
 $zip = $_POST["zip"];
 $city = $_POST["town"];
 $email = $_POST["email"];
 $phone = $_POST["phone"];
 
-$conn = new mysqli('localhost:3306','root','','18323');
+$conn = new mysqli('localhost','root','','18323');
 if ($conn-> connect_error){
     die('Connection failed : ' . $conn-> connect_error);
 }else{

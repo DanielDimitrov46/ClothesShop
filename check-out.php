@@ -63,7 +63,7 @@
                     <form action="check-out-script-for-database.php" method="POST">
                         <div class="col-lg-6">
                             <label for="fir">First Name<span>*</span></label>
-                            <input type="text" id="fir"  name="name">
+                            <input type="text" id="fir"  name="fir">
                         </div>
                         <div class="col-lg-6">
                             <label for="last">Last Name<span>*</span></label>
@@ -71,15 +71,15 @@
                         </div>
                         <div class="col-lg-12">
                             <label for="cun-name">Company Name</label>
-                            <input type="text" id="cun-name" name="company">
+                            <input type="text" id="cun-name" name="cun-name">
                         </div>
                         <div class="col-lg-12">
                             <label for="cun">Country<span>*</span></label>
-                            <input type="text" id="cun" name="country">
+                            <input type="text" id="cun" name="con">
                         </div>
                         <div class="col-lg-12">
                             <label for="street">Street Address<span>*</span></label>
-                            <input type="text" id="street" class="street-first" name="address">
+                            <input type="text" id="street" class="street-first" name="street">
 <!--                            <input type="text" name="address">-->
                         </div>
                         <div class="col-lg-12">
