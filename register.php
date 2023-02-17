@@ -17,6 +17,46 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+<?php
+
+$connection = new PDO('mysql:host=localhost;dbname=18323',"root","");
+
+session_start();
+
+
+if ($_POST ['register']) {
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $error = false;
+
+    $check = $connection->query("SELECT * FROM Users WHERE Username = '" . $username . "'")->fetch();
+
+    if ($check) {
+        $error = "This profile already exists";
+    }
+    if (!$username) {
+        $error = "No username";
+
+    }
+    if (!$email) {
+     $error = "No email";
+    }
+    if (!$password) {
+     $error = "No password";
+    }
+
+    if (!$error) {
+
+        $sql = "INSERT INTO Users (Username, Email, Password) VALUES (?,?,?)";
+        $connection->prepare($sql)->execute([$username, $email, $password]);
+
+        $error = "Thank you!";
+
+    }
+
+}
+?>
 
 <body>
     <!-- Page Preloder -->
@@ -50,19 +90,21 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="register-form">
                         <h2>Register</h2>
-                        <form action="#">
+                        <form action="" method="post">
                             <div class="group-input">
-                                <label for="username">Username or email address *</label>
-                                <input type="text" id="username">
+                                <input name="username" type="text" id="username" autocomplete="off"  value="<?= $username ?>" placeholder="Username">
                             </div>
                             <div class="group-input">
-                                <label for="pass">Password *</label>
-                                <input type="text" id="pass">
+                                <input name="email" type="email" id="email" autocomplete="off" value="<?= $email ?>" placeholder="Email">
                             </div>
                             <div class="group-input">
-                                <label for="con-pass">Confirm Password *</label>
-                                <input type="text" id="con-pass">
+                                <input name="password" type="password" class="input" id="user_pass" autocomplete="off" value="<?= $password ?>" placeholder="Password"><br>
                             </div>
+                            <?php if ($error){
+                                ?>
+                                <label style="position:absolute; font-family: 'Times New Roman'"><br><?= $error ?></label><br><br>
+                                <?php
+                            }?>
                             <button type="submit" class="site-btn register-btn">REGISTER</button>
                         </form>
                         <div class="switch-login">

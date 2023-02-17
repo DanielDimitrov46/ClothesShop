@@ -19,6 +19,37 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+<?php
+
+$connection = new PDO('mysql:host=localhost;dbname=18323',"root","");
+
+session_start();
+
+error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_WARNING);
+
+if ($_POST['login']) {
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $error2 = false;
+
+    $query = "SELECT * FROM Users WHERE Username = '" . $username . "' AND Password = '" . $password . "'";
+
+    $user = $connection->query($query)->fetch();
+
+    if ($user) {
+
+        $_SESSION['user'] = $user;
+
+        header("location:../18323/index.php");
+
+    } else {
+
+        $error2 = "Incorrect Username or Password !";
+    }
+
+}
+?>
 
 <body>
     <!-- Page Preloder -->
@@ -55,15 +86,22 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="login-form">
                         <h2>Login</h2>
-                        <form action="#">
+                        <form action="" method="post">
                             <div class="group-input">
-                                <label for="username">Username or email address *</label>
-                                <input type="text" id="username">
+                                <input name="username" type="text" id="user_login" autocomplete="off" placeholder="Username">
+
                             </div>
                             <div class="group-input">
-                                <label for="pass">Password *</label>
-                                <input type="text" id="pass">
+                                <input name="password" type="password" id="user_pass" autocomplete="off" placeholder="Password">
                             </div>
+                            <?php if ($error2){
+                                ?>
+                                <div class="tab-content">
+                                    <label style="position:absolute; font-family: 'Times New Roman';"><br><?= $error2 ?></label> <br><br>
+                                </div>
+
+                                <?php
+                            }?>
                             <div class="group-input gi-check">
                                 <div class="gi-more">
                                     <label for="save-pass">
@@ -76,6 +114,8 @@
                             </div>
                             <button type="submit" class="site-btn login-btn">Sign In</button>
                         </form>
+
+
                         <div class="switch-login">
                             <a href="./register.php" class="or-login">Or Create An Account</a>
                         </div>

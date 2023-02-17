@@ -1,30 +1,10 @@
-ALTER TABLE `18323`.`inventory` 
-DROP FOREIGN KEY `fk_inventory_sizes`;
-ALTER TABLE `18323`.`inventory` 
-DROP COLUMN `sizes_idsizes`,
-ADD COLUMN `sizes` VARCHAR(45) NOT NULL AFTER `categories`,
-DROP INDEX `fk_inventory_sizes` ;
-
-UPDATE `18323`.`inventory` SET `sizes` = 'm' WHERE (`idinventory` = '1');
-UPDATE `18323`.`inventory` SET `sizes` = 'xs' WHERE (`idinventory` = '2');
-
-new table for information from checkout
-CREATE TABLE `18323`.`info` (
-  `idinfo` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
-  `family` VARCHAR(45) NOT NULL,
-  `company_name` VARCHAR(45) NULL,
-  `country` VARCHAR(45) NOT NULL,
-  `address` VARCHAR(100) NOT NULL,
-  `postcode` VARCHAR(45) NULL,
-  `city` VARCHAR(45) NOT NULL,
-  `email` VARCHAR(70) NOT NULL,
-  `phone` VARCHAR(12) NOT NULL,
-  PRIMARY KEY (`idinfo`));
+ALTER TABLE `18323`.`info` 
+RENAME TO  `18323`.`checkout` ;
 
 
-adding products
-INSERT INTO `18323`.`inventory` (`name`, `price`, `color`, `categories`, `sizes`) VALUES ('test2', '23.80', 'green', 'women', 's');
-INSERT INTO `18323`.`inventory` (`name`, `price`, `color`, `categories`, `sizes`) VALUES ('test3', '15.40', 'red', 'man', 'l');
-INSERT INTO `18323`.`inventory` (`name`, `price`, `color`, `categories`, `sizes`) VALUES ('test4', '12.20', 'brown', 'women', 'xs');
-INSERT INTO `18323`.`inventory` (`name`, `price`, `color`, `categories`, `sizes`) VALUES ('пуловер', '15.00', 'yellow', 'man', 'xl');
+CREATE TABLE `18323`.`Users` (
+  `UserID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Username` VARCHAR(50) NOT NULL,
+  `Email` VARCHAR(45) NOT NULL,
+  `Password` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`UserID`));
