@@ -35,29 +35,44 @@ FROM inventory as i ;'
 );
 
 
-if ($search) {
-        $query = $connection->prepare('SELECT *
-FROM inventory i
-WHERE i.name LIKE ?
-OR i.color LIKE ?');
-        $query->execute([ "%".$search."%","%".$search."%"]);
-        $rows = $query->fetchAll();
-
-
+//if ($search) {
+//        $query = $connection->prepare('SELECT *
+//FROM inventory i
+//WHERE i.name LIKE ?
+//OR i.color LIKE ?');
+//        $query->execute([ "%".$search."%","%".$search."%"]);
+//        $rows = $query->fetchAll();
+//
+//
 //        echo "<pre>";
 //        print_r( $rows );
+//
+//
+//    }
+//
+//
+//
+//
+//else{
+//    $rows = $connection -> query('SELECT
+//i.idinventory,
+//i.name, i.price, i.color, i.categories, i.sizes
+//FROM inventory i' );
+//}
+    $con = mysqli_connect("localhost","root","","18323");
+//$query_run =array();
 
+if(isset($_GET['search'])){
+    $filtervalues = $_GET['search'];
+    $query = "SELECT * FROM inventory WHERE CONCAT(name, price) LIKE '%$filtervalues%' ";
+    $rows = mysqli_query($con,$query);
 
-    }
-
-
-
-
-else{
-    $rows = $connection -> query('SELECT 
-i.idinventory,
-i.name, i.price, i.color, i.categories, i.sizes
-FROM inventory i' );
+//    if (mysqli_num_rows($query_run)>0){
+////        foreach ($query_run as $row){
+////
+////        }
+////    }else{
+////
 }
 ?>
 

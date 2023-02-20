@@ -15,7 +15,7 @@
                     <div class="advanced-search">
                         <button type="button" class="category-btn">All Categories</button>
                         <form class="input-group">
-                            <input type="text" name="search" placeholder="Search" autocomplete="off">
+                            <input type="text" name="search" placeholder="Search" autocomplete="off" value="<?php if(isset($_GET['search'])){echo $_GET['search'];}?>">
                             <button type="button"><i class="ti-search"></i></button>
                         </form>
                     </div>
@@ -70,12 +70,8 @@
                     <ul class="depart-hover">
                         <li class="active"><a href="#">Women’s Clothing</a></li>
                         <li><a href="#">Men’s Clothing</a></li>
-                        <li><a href="#">Underwear</a></li>
                         <li><a href="#">Kid's Clothing</a></li>
-                        <li><a href="#">Brand Fashion</a></li>
-                        <li><a href="#">Accessories/Shoes</a></li>
-                        <li><a href="#">Luxury Brands</a></li>
-                        <li><a href="#">Brand Outdoor Apparel</a></li>
+
                     </ul>
                 </div>
             </div>
