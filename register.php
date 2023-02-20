@@ -20,15 +20,15 @@
 <?php
 
 $connection = new PDO('mysql:host=localhost;dbname=18323',"root","");
+$username = $_POST['username'];//isset($_POST['username']) 
+$email = $_POST['email'];
+$password = $_POST['password'];
+$error = false;
 
 session_start();
 
+if (isset($_POST ['register'])) {
 
-if ($_POST ['register']) {
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $error = false;
 
     $check = $connection->query("SELECT * FROM Users WHERE Username = '" . $username . "'")->fetch();
 
