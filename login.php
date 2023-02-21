@@ -86,7 +86,7 @@ if ($_POST['login']) {
                 <div class="col-lg-6 offset-lg-3">
                     <div class="login-form">
                         <h2>Login</h2>
-                        <form action="" method="post">
+                        <form action="loginForm.php" method="post">
                             <div class="group-input">
                                 <input name="username" type="text" id="user_login" autocomplete="off" placeholder="Username">
 
