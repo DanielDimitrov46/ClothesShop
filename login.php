@@ -20,35 +20,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <?php
-
-$connection = new PDO('mysql:host=localhost;dbname=18323',"root","");
-
-session_start();
-
-error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_WARNING);
-
-if ($_POST['login']) {
-
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $error2 = false;
-
-    $query = "SELECT * FROM Users WHERE Username = '" . $username . "' AND Password = '" . $password . "'";
-
-    $user = $connection->query($query)->fetch();
-
-    if ($user) {
-
-        $_SESSION['user'] = $user;
-
-        header("location:../18323/index.php");
-
-    } else {
-
-        $error2 = "Incorrect Username or Password !";
-    }
-
-}
+include ("loginForm.php");
 ?>
 
 <body>
@@ -86,7 +58,7 @@ if ($_POST['login']) {
                 <div class="col-lg-6 offset-lg-3">
                     <div class="login-form">
                         <h2>Login</h2>
-                        <form action="loginForm.php" method="post">
+                        <form  method="post">
                             <div class="group-input">
                                 <input name="username" type="text" id="user_login" autocomplete="off" placeholder="Username">
 
@@ -112,7 +84,7 @@ if ($_POST['login']) {
                                     <a href="#" class="forget-pass">Forget your Password</a>
                                 </div>
                             </div>
-                            <button type="submit" class="site-btn login-btn">Sign In</button>
+                            <button type="submit" name="login" value="1" class="site-btn login-btn">Sign In</button>
                         </form>
 
 

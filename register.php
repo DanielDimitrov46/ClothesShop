@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
-
+<?php
+include ('registerForm.php');
+?>
 <body>
     <!-- Page Preloder -->
     <div id="preloder">
@@ -51,7 +52,7 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="register-form">
                         <h2>Register</h2>
-                        <form action="insert.php" method="post">
+                        <form method="post">
                             <div class="group-input">
                                 <input type="text" name="username" id="username" autocomplete="off" placeholder="Username">
                             </div>
@@ -61,12 +62,12 @@
                             <div class="group-input">
                                 <input type="password" name="password" class="input" id="user_pass" autocomplete="off" placeholder="Password"><br>
                             </div>
-<!--                            --><?php //if ($error){
-//                                ?>
-<!--                                <label style="position:absolute; font-family: 'Times New Roman'"><br>--><?php //= $error ?><!--</label><br><br>-->
-<!--                                --><?php
-//                            }?>
-                            <button type="submit" class="site-btn register-btn">REGISTER</button>
+                            <?php if ($error){
+                                ?>
+                                <label style="position:absolute; font-family: 'Times New Roman'"><br> <?= $error ?></label><br><br>
+                                <?php
+                            }?>
+                            <button type="submit" name="register" value="1" class="site-btn register-btn">REGISTER</button>
                         </form>
                         <div class="switch-login">
                             <a href="./login.php" class="or-login">Or Login</a>
