@@ -75,6 +75,7 @@ if(isset($_GET['search'])){
 ////
 }
 ?>
+?>
 
 
 <body>
