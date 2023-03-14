@@ -49,10 +49,6 @@ FROM inventory as i ;'
 //
 //
 //    }
-//
-//
-//
-//
 //else{
 //    $rows = $connection -> query('SELECT
 //i.idinventory,
@@ -60,22 +56,76 @@ FROM inventory as i ;'
 //FROM inventory i' );
 //}
     $con = mysqli_connect("localhost","root","","18323");
-//$query_run =array();
 
-if(isset($_GET['search'])){
+if(isset($_GET['search'])) {
     $filtervalues = $_GET['search'];
     $query = "SELECT * FROM inventory WHERE CONCAT(name, price) LIKE '%$filtervalues%' ";
-    $rows = mysqli_query($con,$query);
+    $rows = mysqli_query($con, $query);
+}
+$black = @$_POST['black'];
+$sql = "SELECT * FROM inventory WHERE 1=1";
+if (!empty($black)) {
+  $sql .= " AND color = '$black'";
+  $rows = mysqli_query($con, $sql);
+}
+$violet = @$_POST['violet'];
+$sql = "SELECT * FROM inventory WHERE 1=1";
+if (!empty($violet)) {
+  $sql .= " AND color = '$violet'";
+  $rows = mysqli_query($con, $sql);
+}
+$blue = @$_POST['blue'];
+$sql = "SELECT * FROM inventory WHERE 1=1";
+if (!empty($blue)) {
+  $sql .= " AND color = '$blue'";
+  $rows = mysqli_query($con, $sql);
+}
+$yellow = @$_POST['yellow'];
+$sql = "SELECT * FROM inventory WHERE 1=1";
+if (!empty($yellow)) {
+  $sql .= " AND color = '$yellow'";
+  $rows = mysqli_query($con, $sql);
+}
+$red = @$_POST['red'];
+$sql = "SELECT * FROM inventory WHERE 1=1";
+if (!empty($red)) {
+  $sql .= " AND color = '$red'";
+  $rows = mysqli_query($con, $sql);
+}
+$green = @$_POST['green'];
+$sql = "SELECT * FROM inventory WHERE 1=1";
+if (!empty($green)) {
+  $sql .= " AND color = '$green'";
+  $rows = mysqli_query($con, $sql);
+}
 
-//    if (mysqli_num_rows($query_run)>0){
-////        foreach ($query_run as $row){
-////
-////        }
-////    }else{
-////
+$xs = @$_POST['xs'];
+if (!empty($s)) {
+  $sql .= " AND sizes = '$xs'";
+  $rows = mysqli_query($con, $sql);
+}
+$s = @$_POST['s'];
+if (!empty($s)) {
+  $sql .= " AND sizes = '$s'";
+  $rows = mysqli_query($con, $sql);
+}
+$m = @$_POST['m'];
+if (!empty($m)) {
+  $sql .= " AND sizes = 'm'";
+  $rows = mysqli_query($con, $sql);
+}
+$l = @$_POST['l'];
+if (!empty($l)) {
+  $sql .= " AND sizes = '$l'";
+  $rows = mysqli_query($con, $sql);
+}
+$xl = @$_POST['xl'];
+if (!empty($xl)) {
+  $sql .= " AND sizes = '$xl'";
+  $rows = mysqli_query($con, $sql);
 }
 ?>
-?>
+
 
 
 <body>

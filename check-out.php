@@ -53,7 +53,7 @@
 <!-- Shopping Cart Section Begin -->
 <section class="checkout-section spad">
     <div class="container">
-        <form action="#" class="checkout-form">
+        <form action="check-out-script-for-database.php" class="checkout-form" method="post">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="checkout-content">
