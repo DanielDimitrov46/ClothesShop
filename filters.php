@@ -113,6 +113,7 @@
         </div>
     </div>
 <input class="primary-btn" type="submit" value="Filter">
+        <br><br>
 <input class="primary-btn" type="submit" value="Reset filter">
 </div>
 
