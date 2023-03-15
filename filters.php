@@ -112,8 +112,8 @@
             </div>
         </div>
     </div>
-<input class="filter-btn" type="submit" value="Filter">
-<input class="filter-btn" type="submit" value="Reset filter">
+<input class="primary-btn" type="submit" value="Filter">
+<input class="primary-btn" type="submit" value="Reset filter">
 </div>
 
 </form>

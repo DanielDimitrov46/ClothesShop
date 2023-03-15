@@ -196,13 +196,14 @@ ol {
 	text-transform: uppercase;
 	padding: 5px 20px 5px;
 	cursor: pointer;
+
 	/*cursor: pointer;*/
 	/*position: relative;*/
 	/*padding-left: 33px;*/
 	/*font-size: 16px;*/
 	/*color: #636363;*/
 }
-.size-btn:hover{
+.site-btn:hover{
 
 }
 
