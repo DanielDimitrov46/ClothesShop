@@ -165,6 +165,33 @@ ol {
 }
 
 /* buttons */
+li input {
+	position: absolute;
+	visibility: hidden;
+}
+li label{
+	font-size: 16px;
+	color: #252525;
+	font-weight: 700;
+	height: 40px;
+	width: 70px;
+	border: 1px solid #ebebeb;
+	padding-right: 10px;
+	text-align: center;
+	line-height: 40px;
+	text-transform: uppercase;
+	cursor: pointer;
+	justify-content: center;
+
+}
+li label:active{
+	background: #252525;
+	color: #ffffff;
+}
+/*.categorìes:focus{*/
+/*	background-color: #e7ab3c;*/
+/*}*/
+
 
 .primary-btn {
 	border-radius: 4px;
@@ -212,14 +239,6 @@ ol {
 	text-transform: uppercase;
 	padding: 5px 20px 5px;
 	cursor: pointer;
-
-	/*cursor: pointer;*/
-	/*position: relative;*/
-	/*padding-left: 33px;*/
-	/*font-size: 16px;*/
-	/*color: #636363;*/
-}
-.site-btn:hover{
 
 }
 

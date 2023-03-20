@@ -100,7 +100,7 @@ if (!empty($green)) {
 }
 
 $xs = @$_POST['xs'];
-if (!empty($s)) {
+if (!empty($xs)) {
   $sql .= " AND sizes = '$xs'";
   $rows = mysqli_query($con, $sql);
 }
@@ -122,6 +122,22 @@ if (!empty($l)) {
 $xl = @$_POST['xl'];
 if (!empty($xl)) {
   $sql .= " AND sizes = '$xl'";
+  $rows = mysqli_query($con, $sql);
+}
+$man = @$_POST['man'];
+if (!empty($man)) {
+  $sql .= " AND categories = '$man'";
+  $rows = mysqli_query($con, $sql);
+}
+$women = @$_POST['women'];
+if (!empty($women)) {
+  $sql .= " AND categories = '$women'";
+  $rows = mysqli_query($con, $sql);
+}
+
+$kids = @$_POST['kids'];
+if (!empty($kids)) {
+  $sql .= " AND categories = '$kids'";
   $rows = mysqli_query($con, $sql);
 }
 ?>

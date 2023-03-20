@@ -21,7 +21,6 @@ if ($_POST['login']) {
     if ($user) {
 
         $_SESSION['user'] = $user;
-
         header("location:../18323/index.php");
 
     } else {

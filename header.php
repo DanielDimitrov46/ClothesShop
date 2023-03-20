@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!-- Header Section Begin -->
 <header class="header-section">
     <div class="container">
@@ -15,7 +19,10 @@
                     <div class="advanced-search">
                         <button type="button" class="category-btn">All Categories</button>
                         <form class="input-group">
-                            <input type="text" name="search" placeholder="Search" autocomplete="off" value="<?php if(isset($_GET['search'])){echo $_GET['search'];}?>">
+                            <input type="text" name="search" placeholder="Search" autocomplete="off"
+                                   value="<?php if (isset($_GET['search'])) {
+                                       echo $_GET['search'];
+                                   } ?>">
                             <button type="button"><i class="ti-search"></i></button>
                         </form>
                     </div>
@@ -101,4 +108,4 @@
         </div>
     </div>
 </header>
-    <!-- Header End -->
+<!-- Header End -->
