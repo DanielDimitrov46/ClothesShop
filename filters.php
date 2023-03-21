@@ -32,27 +32,27 @@
             <h4 class="fw-title">Color</h4>
             <div class="fw-color-choose">
                 <div class="cs-item">
-                    <input type="radio" id="cs-black" name="black" value="black">
+                    <input type="radio" class="color" id="cs-black" name="color" value="black">
                     <label class="cs-black" for="cs-black">Black</label>
                 </div>
                 <div class="cs-item">
-                    <input type="radio" id="cs-violet" name="violet" value="violet">
+                    <input type="radio" class="color" id="cs-violet" name="color" value="violet">
                     <label class="cs-violet" for="cs-violet">Violet</label>
                 </div>
                 <div class="cs-item">
-                    <input type="radio" id="cs-blue" name="blue" value="blue">
+                    <input type="radio" class="color" id="cs-blue" name="color" value="blue">
                     <label class="cs-blue" for="cs-blue">Blue</label>
                 </div>
                 <div class="cs-item">
-                    <input type="radio" id="cs-yellow" name="yellow" value="yellow">
+                    <input type="radio" class="color" id="cs-yellow" name="color" value="yellow">
                     <label class="cs-yellow" for="cs-yellow">Yellow</label>
                 </div>
                 <div class="cs-item">
-                    <input type="radio" id="cs-red" name="red" value="red">
+                    <input type="radio" class="color" id="cs-red" name="color" value="red">
                     <label class="cs-red" for="cs-red">Red</label>
                 </div>
                 <div class="cs-item">
-                    <input type="radio" id="cs-green" name="green" value="green">
+                    <input type="radio" class="color" id="cs-green" name="color" value="green">
                     <label class="cs-green" for="cs-green">Green</label>
                 </div>
             </div>

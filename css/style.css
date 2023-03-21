@@ -188,6 +188,10 @@ li label{
 	background: #252525;
 	color: #ffffff;
 }
+.color:checked+label{
+	background: #e7ab3c;
+	color: #ffffff;
+}
 /*.categorìes:focus{*/
 /*	background-color: #e7ab3c;*/
 /*}*/
