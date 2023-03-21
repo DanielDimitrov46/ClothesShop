@@ -184,7 +184,7 @@ li label{
 	justify-content: center;
 
 }
-li label:active{
+.categorìes:checked+label{
 	background: #252525;
 	color: #ffffff;
 }

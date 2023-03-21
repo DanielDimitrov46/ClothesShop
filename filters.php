@@ -20,11 +20,11 @@
         <div class="filter-widget">
         <h4 class="fw-title">Categories</h4>
         <ul class="filter-catagories">
-            <li><input type="radio" id="men" class="categorìes" name="man" value="man">
+            <li><input type="radio" id="men" class="categorìes" name="category" value="man">
                 <label for="men" class="active">Men</label></li>
-            <li><input type="radio" id="women" class="categorìes" name="women" value="women">
+            <li><input type="radio" id="women" class="categorìes" name="category" value="women">
                 <label for="women" class="active">Women</label></li>
-            <li><input type="radio" id="kids" class="categorìes" name="kids" value="kids" >
+            <li><input type="radio" id="kids" class="categorìes" name="category" value="kids" >
                 <label for="kids" class="active">Kids</label></li>
         </ul>
     </div>

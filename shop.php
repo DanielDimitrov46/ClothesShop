@@ -124,20 +124,9 @@ if (!empty($xl)) {
   $sql .= " AND sizes = '$xl'";
   $rows = mysqli_query($con, $sql);
 }
-$man = @$_POST['man'];
-if (!empty($man)) {
-  $sql .= " AND categories = '$man'";
-  $rows = mysqli_query($con, $sql);
-}
-$women = @$_POST['women'];
-if (!empty($women)) {
-  $sql .= " AND categories = '$women'";
-  $rows = mysqli_query($con, $sql);
-}
-
-$kids = @$_POST['kids'];
-if (!empty($kids)) {
-  $sql .= " AND categories = '$kids'";
+$category = @$_POST['category'];
+if (!empty($category)) {
+  $sql .= " AND categories = '$category'";
   $rows = mysqli_query($con, $sql);
 }
 ?>
