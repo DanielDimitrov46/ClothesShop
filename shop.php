@@ -62,66 +62,15 @@ if(isset($_GET['search'])) {
     $query = "SELECT * FROM inventory WHERE CONCAT(name, price) LIKE '%$filtervalues%' ";
     $rows = mysqli_query($con, $query);
 }
-$black = @$_POST['black'];
+$color = @$_POST['color'];
 $sql = "SELECT * FROM inventory WHERE 1=1";
-if (!empty($black)) {
-  $sql .= " AND color = '$black'";
+if (!empty($color)) {
+  $sql .= " AND color = '$color'";
   $rows = mysqli_query($con, $sql);
 }
-$violet = @$_POST['violet'];
-$sql = "SELECT * FROM inventory WHERE 1=1";
-if (!empty($violet)) {
-  $sql .= " AND color = '$violet'";
-  $rows = mysqli_query($con, $sql);
-}
-$blue = @$_POST['blue'];
-$sql = "SELECT * FROM inventory WHERE 1=1";
-if (!empty($blue)) {
-  $sql .= " AND color = '$blue'";
-  $rows = mysqli_query($con, $sql);
-}
-$yellow = @$_POST['yellow'];
-$sql = "SELECT * FROM inventory WHERE 1=1";
-if (!empty($yellow)) {
-  $sql .= " AND color = '$yellow'";
-  $rows = mysqli_query($con, $sql);
-}
-$red = @$_POST['red'];
-$sql = "SELECT * FROM inventory WHERE 1=1";
-if (!empty($red)) {
-  $sql .= " AND color = '$red'";
-  $rows = mysqli_query($con, $sql);
-}
-$green = @$_POST['green'];
-$sql = "SELECT * FROM inventory WHERE 1=1";
-if (!empty($green)) {
-  $sql .= " AND color = '$green'";
-  $rows = mysqli_query($con, $sql);
-}
-
-$xs = @$_POST['xs'];
-if (!empty($xs)) {
-  $sql .= " AND sizes = '$xs'";
-  $rows = mysqli_query($con, $sql);
-}
-$s = @$_POST['s'];
-if (!empty($s)) {
-  $sql .= " AND sizes = '$s'";
-  $rows = mysqli_query($con, $sql);
-}
-$m = @$_POST['m'];
-if (!empty($m)) {
-  $sql .= " AND sizes = 'm'";
-  $rows = mysqli_query($con, $sql);
-}
-$l = @$_POST['l'];
-if (!empty($l)) {
-  $sql .= " AND sizes = '$l'";
-  $rows = mysqli_query($con, $sql);
-}
-$xl = @$_POST['xl'];
-if (!empty($xl)) {
-  $sql .= " AND sizes = '$xl'";
+$size = @$_POST['size'];
+if (!empty($size)) {
+  $sql .= " AND sizes = '$size'";
   $rows = mysqli_query($con, $sql);
 }
 $category = @$_POST['category'];

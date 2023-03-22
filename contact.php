@@ -82,7 +82,7 @@
                             </div>
                             <div class="ci-text">
                                 <span>Email:</span>
-                                <p>fashi@fashi.com</p>
+                                <p>fashion@fashion.com</p>
                             </div>
                         </div>
                     </div>

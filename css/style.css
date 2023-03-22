@@ -181,8 +181,6 @@ li label{
 	line-height: 40px;
 	text-transform: uppercase;
 	cursor: pointer;
-	justify-content: center;
-
 }
 .categorìes:checked+label{
 	background: #252525;
@@ -1924,7 +1922,7 @@ li label{
 }
 
 .filter-widget .fw-color-choose .cs-item label.cs-violet:before {
-	background: #8230E3;
+	background: beige;
 }
 
 .filter-widget .fw-color-choose .cs-item label.cs-blue:before {

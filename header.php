@@ -100,6 +100,9 @@ session_start();
                             <li><a href="./check-out.php">Checkout</a></li>
                             <li><a href="./register.php">Register</a></li>
                             <li><a href="./login.php">Login</a></li>
+<!--                            --><?php //if (isset($_SESSION['user'])):?>
+<!--                            <li><a href="./login.php">Login</a></li>-->
+<!--                            --><?php //endif; ?>
                         </ul>
                     </li>
                 </ul>

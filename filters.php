@@ -1,20 +1,3 @@
-<?php
-//$xs = @$_POST['xs'];
-//$s = @$_GET['s'];
-//$m = @$_GET['m'];
-//$l = @$_GET['l'];
-//$xl = @$_GET['xl'];
-//
-//$con = mysqli_connect("localhost", "root", "", "18323");
-//
-////if (isset($_POST['xs']) or isset($_GET['s']) or isset($_GET['m'])) {
-////    $filtervalues = $_POST['xs'];
-////    $query = "SELECT * FROM inventory WHERE CONCAT(name, price, sizes) LIKE '%$filtervalues%' ";
-////    $rows = mysqli_query($con, $query);
-////
-////}
-////?>
-
 <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
     <form action="shop.php" method="post">
         <div class="filter-widget">
@@ -36,8 +19,8 @@
                     <label class="cs-black" for="cs-black">Black</label>
                 </div>
                 <div class="cs-item">
-                    <input type="radio" class="color" id="cs-violet" name="color" value="violet">
-                    <label class="cs-violet" for="cs-violet">Violet</label>
+                    <input type="radio" class="color" id="cs-violet" name="color" value="white">
+                    <label class="cs-violet" for="cs-violet">White</label>
                 </div>
                 <div class="cs-item">
                     <input type="radio" class="color" id="cs-blue" name="color" value="blue">
@@ -65,23 +48,23 @@
         <div class="filter-widget">
             <div class="fw-size-choose">
                 <div class="sc-item">
-                    <input type="radio" id="xs-size" name="xs" value="xs">
+                    <input type="radio" id="xs-size" name="size" value="xs">
                     <label for="xs-size">xs</label>
                 </div>
                 <div class="sc-item">
-                    <input type="radio" id="s-size" name="s" value="s">
+                    <input type="radio" id="s-size" name="size" value="s">
                     <label for="s-size">s</label>
                 </div>
                 <div class="sc-item">
-                    <input type="radio" id="m-size" name="m" value="m">
+                    <input type="radio" id="m-size" name="size" value="m">
                     <label for="m-size">m</label>
                 </div>
                 <div class="sc-item">
-                    <input type="radio" id="l-size" name="l" value="l">
+                    <input type="radio" id="l-size" name="size" value="l">
                     <label for="l-size">l</label>
                 </div>
                 <div class="sc-item">
-                    <input type="radio" id="xl-size" name="xl" value="xl">
+                    <input type="radio" id="xl-size" name="size" value="xl">
                     <label for="xl-size">xl</label>
                 </div>
                 <!--                <div class="button-filter">-->
