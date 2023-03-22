@@ -98,11 +98,13 @@ session_start();
                         <ul class="dropdown">
                             <li><a href="./shopping-cart.php">Shopping Cart</a></li>
                             <li><a href="./check-out.php">Checkout</a></li>
-                            <li><a href="./register.php">Register</a></li>
-                            <li><a href="./login.php">Login</a></li>
-<!--                            --><?php //if (isset($_SESSION['user'])):?>
-<!--                            <li><a href="./login.php">Login</a></li>-->
-<!--                            --><?php //endif; ?>
+                            <?php if (isset($_SESSION['user'])) { ?>
+                                <li><a class="login" href="#"><?= $_SESSION['user']['Username'] ?></a></li>
+                                <li><a href="./logout.php">Logout</a></li>
+                            <?php } else { ?>
+                                <li><a href="./login.php">Login</a></li>
+                                <li><a href="./register.php">Register</a></li>
+                            <?php } ?>
                         </ul>
                     </li>
                 </ul>

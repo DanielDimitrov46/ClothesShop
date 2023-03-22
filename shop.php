@@ -26,7 +26,7 @@ $search = @$_GET['search'];
 $sizes = @$_GET['sizes'];
 
 $connection = new PDO('mysql:host=localhost;dbname=18323',"root","");
-
+//loading products
 $rows = $connection -> query('SELECT 
 i.idinventory,
 i.name, i.price, i.color,
@@ -35,33 +35,15 @@ FROM inventory as i ;'
 );
 
 
-//if ($search) {
-//        $query = $connection->prepare('SELECT *
-//FROM inventory i
-//WHERE i.name LIKE ?
-//OR i.color LIKE ?');
-//        $query->execute([ "%".$search."%","%".$search."%"]);
-//        $rows = $query->fetchAll();
-//
-//
-//        echo "<pre>";
-//        print_r( $rows );
-//
-//
-//    }
-//else{
-//    $rows = $connection -> query('SELECT
-//i.idinventory,
-//i.name, i.price, i.color, i.categories, i.sizes
-//FROM inventory i' );
-//}
     $con = mysqli_connect("localhost","root","","18323");
-
+//search bar
 if(isset($_GET['search'])) {
     $filtervalues = $_GET['search'];
     $query = "SELECT * FROM inventory WHERE CONCAT(name, price) LIKE '%$filtervalues%' ";
     $rows = mysqli_query($con, $query);
 }
+
+//filter menu
 $color = @$_POST['color'];
 $sql = "SELECT * FROM inventory WHERE 1=1";
 if (!empty($color)) {

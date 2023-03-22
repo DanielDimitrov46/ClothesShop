@@ -35,7 +35,7 @@ if ($_POST ['register']) {
 		$connection->prepare($sql)->execute([$username, $email, $password]);
 
 		$error = "Thank you!";
-
+        header("location:../18323/login.php");
 	}
 
 }

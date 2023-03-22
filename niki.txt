@@ -14,3 +14,5 @@ INSERT INTO `18323`.`inventory` (`name`, `price`, `color`, `categories`, `sizes`
 INSERT INTO `18323`.`inventory` (`name`, `price`, `color`, `categories`, `sizes`) VALUES ('Sweater', '13.99', 'blue', 'kids', 'm');
 INSERT INTO `18323`.`inventory` (`name`, `price`, `color`, `categories`, `sizes`) VALUES ('T-shirt', '12.99', 'yellow', 'kids', 's');
 INSERT INTO `18323`.`inventory` (`name`, `price`, `color`, `categories`, `sizes`) VALUES ('Polo shirt', '15.99', 'blue', 'kids', 'xs');
+INSERT INTO `18323`.`inventory` (`name`, `price`, `color`, `categories`, `sizes`) VALUES ('Jacket', '23.99', 'green', 'kids', 's');
+INSERT INTO `18323`.`inventory` (`name`, `price`, `color`, `categories`, `sizes`) VALUES ('Shorts', '11.99', 'green', 'kids', 'm');

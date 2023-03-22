@@ -6,7 +6,7 @@ session_start();
 
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_WARNING);
 
-
+@$user=[];
 if ($_POST['login']) {
 
 
@@ -17,7 +17,6 @@ if ($_POST['login']) {
     $query = "SELECT * FROM Users WHERE Username = '" . $username . "' AND Password = '" . $password . "'";
 
     $user = $connection->query($query)->fetch();
-
     if ($user) {
 
         $_SESSION['user'] = $user;
