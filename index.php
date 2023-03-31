@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -109,7 +110,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="product-large set-bg" data-setbg="img/products/women-large.jpg">
+                    <div class="product-large set-bg" data-setbg="img/products/product-3.jpg">
                         <h2>Women’s</h2>
                         <a href="#">Discover More</a>
                     </div>
@@ -150,7 +151,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/women-2.jpg" alt="">
+                                <img src="img/products/product-6.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -172,7 +173,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/women-3.jpg" alt="">
+                                <img src="img/products/product-7.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -194,7 +195,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/women-4.jpg" alt="">
+                                <img src="img/products/product-8.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>

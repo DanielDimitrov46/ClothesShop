@@ -23,7 +23,7 @@
 <?php
 
 $search = @$_GET['search'];
-$sizes = @$_GET['sizes'];
+//$sizes = @$_GET['sizes'];
 
 $connection = new PDO('mysql:host=localhost;dbname=18323',"root","");
 //loading products

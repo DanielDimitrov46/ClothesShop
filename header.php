@@ -18,11 +18,8 @@ session_start();
 
                     <div class="advanced-search">
                         <button type="button" class="category-btn">All Categories</button>
-                        <form class="input-group">
-                            <input type="text" name="search" placeholder="Search" autocomplete="off"
-                                   value="<?php if (isset($_GET['search'])) {
-                                       echo $_GET['search'];
-                                   } ?>">
+                        <form action="shop.php" class="input-group">
+                            <input type="text" name="search" placeholder="Search" autocomplete="off">
                             <button type="button"><i class="ti-search"></i></button>
                         </form>
                     </div>
@@ -99,7 +96,7 @@ session_start();
                             <li><a href="./shopping-cart.php">Shopping Cart</a></li>
                             <li><a href="./check-out.php">Checkout</a></li>
                             <?php if (isset($_SESSION['user'])) { ?>
-                                <li><a class="login" href="#"><?= $_SESSION['user']['Username'] ?></a></li>
+                                <li><a class="login" href="#">Welcome, <?= $_SESSION['user']['Username'] ?></a></li>
                                 <li><a href="./logout.php">Logout</a></li>
                             <?php } else { ?>
                                 <li><a href="./login.php">Login</a></li>
