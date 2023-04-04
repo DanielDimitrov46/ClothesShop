@@ -121,6 +121,7 @@ if (!empty($category)) {
                             ?>
                             <div class="col-lg-4 col-sm-6">
                                 <div class="product-item">
+                                    <a href="/18323/product.php?id=<?= $row['idinventory']?>">
                                     <div class="pi-pic">
                                         <img src="img/products/product-<?=$row["idinventory"]?>.jpg" alt="">
                                         <div class="icon">
@@ -131,7 +132,6 @@ if (!empty($category)) {
                                         </ul>
                                     </div>
                                     <div class="pi-text">
-                                        <a href="#">
                                             <h5><?= $row["name"] ?></h5>
                                         </a>
                                         <div class="product-price">
