@@ -109,7 +109,7 @@
                             <br>
                         </div>
                         <div class="order-btn">
-                            <button type="submit" class="site-btn place-btn">Place Order</button>
+                            <button type="submit" name="order" class="site-btn place-btn">Place Order</button>
                         </div>
                     </form>
                 </div>
