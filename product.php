@@ -66,15 +66,15 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="product-pic-zoom">
-                                <img class="product-big-img" src="img/product-single/product-1.jpg" alt="">
+                                <img class="product-big-img" src="img/products/product-<?=$itm["idinventory"]?>.jpg" alt="">
                                 <div class="zoom-icon">
                                     <i class="fa fa-search-plus"></i>
                                 </div>
                             </div>
                             <div class="product-thumbs">
                                 <div class="product-thumbs-track ps-slider owl-carousel">
-                                    <div class="pt active" data-imgbigurl="img/product-single/product-1.jpg"><img
-                                            src="img/product-single/product-1.jpg" alt=""></div>
+                                    <div class="pt active" data-imgbigurl="img/product-single/product-1.jpg">
+                                        <img src="img/products/product-<?=$itm["idinventory"]?>.jpg" alt=""></div>
                                 </div>
                             </div>
                         </div>
