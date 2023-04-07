@@ -35,7 +35,7 @@ FROM inventory as i ;'
 );
 
 
-    $con = mysqli_connect("localhost","root","","18323");
+$con = mysqli_connect("localhost","root","","18323");
 //search bar
 if(isset($_GET['search'])) {
     $filtervalues = $_GET['search'];

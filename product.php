@@ -172,9 +172,9 @@
                                             </tr>
                                             <tr>
                                                 <td class="p-catagory">Availability</td>
-                                                <td>
-                                                    <div class="p-stock"><?=$itm['available']?> in stock</div>
-                                                </td>
+<!--                                                <td>-->
+<!--                                                    <div class="p-stock">--><?php //=$itm['available']?><!-- in stock</div>-->
+<!--                                                </td>-->
                                             </tr>
                                             <tr>
                                             </tr>
