@@ -1,1 +1,1 @@
-# Niki-nenchev-diploma
+# Diploma project for student
